@@ -122,7 +122,7 @@ public class Main {
         //Closing the language dropdown
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='View']"))).click();
 
-
+        driver.navigate().to("https://www.coursera.org");
         //Scrolling down to Footer
         Actions action = new Actions(driver);
         WebElement enterprise = driver.findElement(By.xpath("//a[text()='For Enterprise']"));
@@ -182,7 +182,7 @@ public class Main {
         File img=new File(System.getProperty("user.dir")+"\\screenshot\\coursera.png");
         tempimg.renameTo(img);
 
-
+        driver.navigate().to("https://www.coursera.org");
         driver.quit();
 
 
